@@ -6,12 +6,16 @@
 </head>
 <body>
     <h1>联系人列表</h1>
-    <ul>
+    <ol>
         {% for contact in contact_list %}
-            <li>{{ contact.name }}</li>
+            <a href="/people_info/{{ contact.id }}"><li>{{ contact.name }}</li></a>
         {% endfor %}
-    </ul>
 
+    </ol>
+
+<script>
+    
+</script>
 
 </body>
 </html>
